@@ -7,6 +7,7 @@
 //
 
 #import "HiraQuizViewController.h"
+#import "SurveyLinkViewController.h"
 
 @interface HiraQuizViewController ()
 
@@ -105,7 +106,8 @@
         
         if(counter == 4)
         {
-            NSLog(@"Counter is 4");
+            SurveyLinkViewController* svc = [[SurveyLinkViewController alloc] initWithNibName:@"SurveyLinkViewController" bundle:nil];
+            [self presentViewController:svc animated:true completion:nil];
         }
         else
         {

@@ -55,6 +55,8 @@
 		986E2F92176A5B5E0088618E /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986E2F91176A5B5E0088618E /* DataController.m */; };
 		986E2F97176A922E0088618E /* VerbConjViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986E2F95176A922E0088618E /* VerbConjViewController.m */; };
 		986E2F98176A922E0088618E /* VerbConjViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 986E2F96176A922E0088618E /* VerbConjViewController.xib */; };
+		986E2F9C176AA65B0088618E /* SurveyLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986E2F9A176AA65B0088618E /* SurveyLinkViewController.m */; };
+		986E2F9D176AA65B0088618E /* SurveyLinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 986E2F9B176AA65B0088618E /* SurveyLinkViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +119,9 @@
 		986E2F94176A922E0088618E /* VerbConjViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerbConjViewController.h; sourceTree = "<group>"; };
 		986E2F95176A922E0088618E /* VerbConjViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerbConjViewController.m; sourceTree = "<group>"; };
 		986E2F96176A922E0088618E /* VerbConjViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerbConjViewController.xib; sourceTree = "<group>"; };
+		986E2F99176AA65B0088618E /* SurveyLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyLinkViewController.h; sourceTree = "<group>"; };
+		986E2F9A176AA65B0088618E /* SurveyLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyLinkViewController.m; sourceTree = "<group>"; };
+		986E2F9B176AA65B0088618E /* SurveyLinkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurveyLinkViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +311,9 @@
 		986E2F93176A8F890088618E /* Prototype-Only Pages */ = {
 			isa = PBXGroup;
 			children = (
+				986E2F99176AA65B0088618E /* SurveyLinkViewController.h */,
+				986E2F9A176AA65B0088618E /* SurveyLinkViewController.m */,
+				986E2F9B176AA65B0088618E /* SurveyLinkViewController.xib */,
 			);
 			name = "Prototype-Only Pages";
 			sourceTree = "<group>";
@@ -397,6 +405,7 @@
 				986E2F8E1768BA550088618E /* quizIcon.png in Resources */,
 				986E2F8F1768BA550088618E /* listIcon.png in Resources */,
 				986E2F98176A922E0088618E /* VerbConjViewController.xib in Resources */,
+				986E2F9D176AA65B0088618E /* SurveyLinkViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +425,7 @@
 				986E2F891768AAA10088618E /* HiraQuizViewController.m in Sources */,
 				986E2F92176A5B5E0088618E /* DataController.m in Sources */,
 				986E2F97176A922E0088618E /* VerbConjViewController.m in Sources */,
+				986E2F9C176AA65B0088618E /* SurveyLinkViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "GrammarSelectViewController.h"
+#import "VerbConjViewController.h"
 
 @interface GrammarSelectViewController ()
 
@@ -37,6 +38,22 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)onClick:(id)sender
+{
+    VerbConjViewController* verbConjVC = [[VerbConjViewController alloc] initWithNibName:@"VerbConjViewController" bundle:nil];
+    
+    switch ([sender tag])
+    {
+        case 0: //verb conjugation
+            [self.navigationController pushViewController:verbConjVC animated:true];
+            break;
+        case 1: //adjective conjugation
+            break;
+        case 2: //sentences
+            break;
+    }
 }
 
 @end

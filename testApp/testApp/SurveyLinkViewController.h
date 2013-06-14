@@ -1,5 +1,5 @@
 //
-//  VerbConjViewController.h
+//  SurveyLinkViewController.h
 //  testApp
 //
 //  Created by Michael Mancuso on 6/13/13.
@@ -8,11 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VerbConjViewController : UIViewController
-{
-    IBOutlet UITextField* input;
-    IBOutlet UITextView* results;
-}
+@interface SurveyLinkViewController : UIViewController
 
 -(IBAction)onClick:(id)sender;
 

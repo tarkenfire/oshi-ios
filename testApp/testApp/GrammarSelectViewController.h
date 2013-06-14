@@ -10,4 +10,6 @@
 
 @interface GrammarSelectViewController : UIViewController
 
+-(IBAction)onClick:(id)sender;
+
 @end

@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataController.h"
 
 @interface HiraListViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
     NSArray* hiraList;
     NSArray* hiraRomList;
+    DataController* dataController;
 }
 
 @end

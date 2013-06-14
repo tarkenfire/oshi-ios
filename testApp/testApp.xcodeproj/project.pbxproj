@@ -52,6 +52,9 @@
 		986E2F8A1768AAA10088618E /* HiraQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 986E2F881768AAA00088618E /* HiraQuizViewController.xib */; };
 		986E2F8E1768BA550088618E /* quizIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 986E2F8C1768BA550088618E /* quizIcon.png */; };
 		986E2F8F1768BA550088618E /* listIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 986E2F8D1768BA550088618E /* listIcon.png */; };
+		986E2F92176A5B5E0088618E /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986E2F91176A5B5E0088618E /* DataController.m */; };
+		986E2F97176A922E0088618E /* VerbConjViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986E2F95176A922E0088618E /* VerbConjViewController.m */; };
+		986E2F98176A922E0088618E /* VerbConjViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 986E2F96176A922E0088618E /* VerbConjViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +112,11 @@
 		986E2F881768AAA00088618E /* HiraQuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HiraQuizViewController.xib; sourceTree = "<group>"; };
 		986E2F8C1768BA550088618E /* quizIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quizIcon.png; sourceTree = "<group>"; };
 		986E2F8D1768BA550088618E /* listIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listIcon.png; sourceTree = "<group>"; };
+		986E2F90176A5B5E0088618E /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataController.h; sourceTree = "<group>"; };
+		986E2F91176A5B5E0088618E /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
+		986E2F94176A922E0088618E /* VerbConjViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerbConjViewController.h; sourceTree = "<group>"; };
+		986E2F95176A922E0088618E /* VerbConjViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerbConjViewController.m; sourceTree = "<group>"; };
+		986E2F96176A922E0088618E /* VerbConjViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerbConjViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +182,8 @@
 				98163AEC17677B4B00CB10B7 /* Default.png */,
 				98163AEE17677B4B00CB10B7 /* Default@2x.png */,
 				98163AF017677B4B00CB10B7 /* Default-568h@2x.png */,
+				986E2F90176A5B5E0088618E /* DataController.h */,
+				986E2F91176A5B5E0088618E /* DataController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -207,6 +217,7 @@
 		986E2F5017688C230088618E /* View Controllers and Nibs */ = {
 			isa = PBXGroup;
 			children = (
+				986E2F93176A8F890088618E /* Prototype-Only Pages */,
 				986E2F6A1768956D0088618E /* Grammar Pages */,
 				986E2F5417688C990088618E /* Character Pages */,
 				986E2F5117688C330088618E /* Main Menu */,
@@ -261,6 +272,9 @@
 				986E2F6C176897410088618E /* GrammarSelectViewController.h */,
 				986E2F6D176897410088618E /* GrammarSelectViewController.m */,
 				986E2F6E176897410088618E /* GrammarSelectViewController.xib */,
+				986E2F94176A922E0088618E /* VerbConjViewController.h */,
+				986E2F95176A922E0088618E /* VerbConjViewController.m */,
+				986E2F96176A922E0088618E /* VerbConjViewController.xib */,
 			);
 			name = "Grammar Pages";
 			sourceTree = "<group>";
@@ -287,6 +301,13 @@
 				986E2F8D1768BA550088618E /* listIcon.png */,
 			);
 			name = Icons;
+			sourceTree = "<group>";
+		};
+		986E2F93176A8F890088618E /* Prototype-Only Pages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Prototype-Only Pages";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,6 +396,7 @@
 				986E2F8A1768AAA10088618E /* HiraQuizViewController.xib in Resources */,
 				986E2F8E1768BA550088618E /* quizIcon.png in Resources */,
 				986E2F8F1768BA550088618E /* listIcon.png in Resources */,
+				986E2F98176A922E0088618E /* VerbConjViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +414,8 @@
 				986E2F6F176897410088618E /* GrammarSelectViewController.m in Sources */,
 				986E2F841768AA460088618E /* HiraListViewController.m in Sources */,
 				986E2F891768AAA10088618E /* HiraQuizViewController.m in Sources */,
+				986E2F92176A5B5E0088618E /* DataController.m in Sources */,
+				986E2F97176A922E0088618E /* VerbConjViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

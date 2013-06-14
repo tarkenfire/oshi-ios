@@ -8,6 +8,7 @@
 
 #import "HiraListViewController.h"
 
+
 @interface HiraListViewController ()
 
 @end
@@ -29,10 +30,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    //not a good way to do this for a real app, but will suffice for a mockup.
-    hiraList = [[NSArray alloc] initWithObjects:@"あ",@"え",@"い",@"お",@"う",@"か",@"け",@"き",@"こ",@"く", nil];
-    hiraRomList = [[NSArray alloc] initWithObjects:@"a",@"e",@"i",@"o",@"u",@"ka",@"ke",@"ki",@"ko",@"ku", nil];
+    dataController = [DataController getInstance];
+    [dataController populateData];
     
 }
 
@@ -45,7 +44,7 @@
 //table code
 -(NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [hiraList count];
+    return [dataController getHiraCount];
 }
 
 -(UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -59,15 +58,15 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
     }
     
-    cell.textLabel.text = [hiraList objectAtIndex:indexPath.row];
-    cell.detailTextLabel.text = [hiraRomList objectAtIndex:indexPath.row];
+    cell.textLabel.text = [dataController.hiraList objectAtIndex:indexPath.row];
+    cell.detailTextLabel.text = [dataController.hiraRoList objectAtIndex:indexPath.row];
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIAlertView *message = [[UIAlertView alloc] initWithTitle:[hiraList objectAtIndex:indexPath.row]
-                                                      message:[hiraRomList objectAtIndex:indexPath.row]
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:[dataController.hiraList objectAtIndex:indexPath.row]
+                                                      message:[dataController.hiraRoList objectAtIndex:indexPath.row]
                                                      delegate:nil
                                             cancelButtonTitle:@"OK"
                                             otherButtonTitles:nil];

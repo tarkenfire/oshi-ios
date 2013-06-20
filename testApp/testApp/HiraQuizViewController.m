@@ -98,10 +98,12 @@
         if (sen == [correctAnswers[counter] intValue])
         {
             correctLabel.text = [NSString stringWithFormat:@"%d", ++correct];
+            [self animateCorrectAnswer];
         }
         else
         {
             incorrectLabel.text = [NSString stringWithFormat:@"%d", ++incorrect];
+            [self animateIncorrectAnswer];
         }
         
         if(counter == 4)
@@ -118,6 +120,38 @@
     {
         NSLog(@"After final question.");
     }
+}
+
+-(void)animateCorrectAnswer
+{
+    [UIView animateWithDuration:.15f
+                          delay:0.f
+                        options:(UIViewAnimationOptionRepeat | UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionCurveEaseIn)
+                     animations:^
+                        {
+                            [UIView setAnimationRepeatCount:4];
+                            correctLabel.alpha = 0.0f;
+                        }
+                     completion:^(BOOL finished)
+                        {
+                            correctLabel.alpha = 1.0f;
+                        }];
+}
+
+-(void)animateIncorrectAnswer
+{
+    [UIView animateWithDuration:.15f
+                          delay:0.f
+                        options:(UIViewAnimationOptionRepeat | UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionCurveEaseIn)
+                     animations:^
+                        {
+                            [UIView setAnimationRepeatCount:4];
+                            incorrectLabel.alpha = 0.0f;
+                        }
+                     completion:^(BOOL finished)
+                        {
+                            incorrectLabel.alpha = 1.0f;
+                        }];
 }
 
 @end

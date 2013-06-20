@@ -21,7 +21,6 @@
 		98568FC01772624500595BE3 /* KanaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98568FBE1772624500595BE3 /* KanaDetailViewController.m */; };
 		98568FC11772624500595BE3 /* KanaDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98568FBF1772624500595BE3 /* KanaDetailViewController.xib */; };
 		98568FC517726AEC00595BE3 /* hira_a_stroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 98568FC317726AEC00595BE3 /* hira_a_stroke.png */; };
-		98568FCC17726C8300595BE3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98568FCB17726C8300595BE3 /* ImageIO.framework */; };
 		98568FD6177273E700595BE3 /* hira_ko_stroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 98568FCD177273E700595BE3 /* hira_ko_stroke.png */; };
 		98568FD7177273E700595BE3 /* hira_ke_stroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 98568FCE177273E700595BE3 /* hira_ke_stroke.png */; };
 		98568FD8177273E700595BE3 /* hira_ku_stroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 98568FCF177273E700595BE3 /* hira_ku_stroke.png */; };
@@ -93,7 +92,6 @@
 		98568FBE1772624500595BE3 /* KanaDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KanaDetailViewController.m; sourceTree = "<group>"; };
 		98568FBF1772624500595BE3 /* KanaDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KanaDetailViewController.xib; sourceTree = "<group>"; };
 		98568FC317726AEC00595BE3 /* hira_a_stroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hira_a_stroke.png; sourceTree = "<group>"; };
-		98568FCB17726C8300595BE3 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		98568FCD177273E700595BE3 /* hira_ko_stroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hira_ko_stroke.png; sourceTree = "<group>"; };
 		98568FCE177273E700595BE3 /* hira_ke_stroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hira_ke_stroke.png; sourceTree = "<group>"; };
 		98568FCF177273E700595BE3 /* hira_ku_stroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hira_ku_stroke.png; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98568FCC17726C8300595BE3 /* ImageIO.framework in Frameworks */,
 				98163ADB17677B4B00CB10B7 /* UIKit.framework in Frameworks */,
 				98163ADD17677B4B00CB10B7 /* Foundation.framework in Frameworks */,
 				98163ADF17677B4B00CB10B7 /* CoreGraphics.framework in Frameworks */,
@@ -169,7 +166,6 @@
 		98163ACE17677B4B00CB10B7 = {
 			isa = PBXGroup;
 			children = (
-				98568FCB17726C8300595BE3 /* ImageIO.framework */,
 				98163AE017677B4B00CB10B7 /* testApp */,
 				98163AD917677B4B00CB10B7 /* Frameworks */,
 				98163AD817677B4B00CB10B7 /* Products */,

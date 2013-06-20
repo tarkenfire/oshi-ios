@@ -33,14 +33,14 @@
     dataController = [DataController getInstance];
     
     //quiz is hard-coded for sake of prototype. Real app would draw from database.
-    kana = @[@"か",@"あ", @"そ", @"や", @"て"];
-    correctAnswers = @[@2, @1, @3, @1, @4];
+    kana = @[@"き",@"ふ", @"こ", @"う", @"ろ"];
+    correctAnswers = @[@1, @3, @2, @4, @1];
     
-    q1Anwsers = @[@"me", @"ka", @"te", @"so"];
-    q2Anwsers = @[@"a", @"go", @"ko", @"yo"];
-    q3Anwsers = @[@"ka", @"ru", @"so", @"he"];
-    q4Anwsers = @[@"ya", @"chi", @"tsu", @"me"];
-    q5Anwsers = @[@"wa", @"ro", @"ka", @"te"];
+    q1Anwsers = @[@"ki", @"ha", @"te", @"so"];
+    q2Anwsers = @[@"a", @"go", @"fu", @"shi"];
+    q3Anwsers = @[@"ka", @"ko", @"so", @"he"];
+    q4Anwsers = @[@"ya", @"chi", @"tsu", @"u"];
+    q5Anwsers = @[@"ro", @"kyu", @"ka", @"te"];
     
     answers = @[q1Anwsers, q2Anwsers, q3Anwsers, q4Anwsers,q5Anwsers];
     

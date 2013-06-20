@@ -11,7 +11,7 @@
 @interface VerbConjViewController : UIViewController
 {
     IBOutlet UITextField* input;
-    IBOutlet UITextView* results;
+    IBOutlet UIView* resultView;
 }
 
 -(IBAction)onClick:(id)sender;

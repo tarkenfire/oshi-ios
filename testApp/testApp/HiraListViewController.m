@@ -7,6 +7,7 @@
 //
 
 #import "HiraListViewController.h"
+#import "KanaDetailViewController.h"
 
 
 @interface HiraListViewController ()
@@ -65,12 +66,11 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIAlertView *message = [[UIAlertView alloc] initWithTitle:[dataController.hiraList objectAtIndex:indexPath.row]
-                                                      message:[dataController.hiraRoList objectAtIndex:indexPath.row]
-                                                     delegate:nil
-                                            cancelButtonTitle:@"OK"
-                                            otherButtonTitles:nil];
-    [message show];
+    KanaDetailViewController* kanaView = [[KanaDetailViewController alloc] initWithNibName:@"KanaDetailViewController" bundle:nil];
+    
+    dataController.currentIndex = indexPath.row;
+    
+    [self presentViewController:kanaView animated:true completion:nil];
     
 }
 

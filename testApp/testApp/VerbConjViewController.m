@@ -40,14 +40,14 @@
 {
     if ([sender tag] == 0) //then is clear button
     {
-        [results setText:@""];
         [input setText:@""];
+        [resultView setHidden:true];
     }
     else //is conjugate button
     {
         [self.view endEditing:YES];
         NSString* testString = input.text;
-        if (![testString compare:@"taberu" options:NSCaseInsensitiveSearch])
+        if (![testString compare:@"oshieru" options:NSCaseInsensitiveSearch])
         {
             [self displayResults];
         }
@@ -61,8 +61,7 @@
 -(void)displayResults
 {
     //since there is only one "answer" in regards to the prototype, I can just statically add the information for the one verb here.
-    NSString* result = @"Taberu - To Eat\nPolite Form: Tabemasu\nTe Form: Tabete\nPast Form (ta form): Tabeta\nNegative Form: Tabenai\nCausative Form: Tabesaseru\nPassive Form: Taberareru\nPotential Form: Taberareru\nConditional Form: Taberebe\n Volitional Form: Tabeyou";
-    [results setText:result];
+    [resultView setHidden:false];
 }
 
 -(void)showError

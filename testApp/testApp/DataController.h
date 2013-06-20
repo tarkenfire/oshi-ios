@@ -12,6 +12,7 @@
 
 @property NSArray* hiraList;
 @property NSArray* hiraRoList;
+@property NSArray* hiraDetailList;
 @property int currentIndex;
 
 +(DataController*)getInstance;

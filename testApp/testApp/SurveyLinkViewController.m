@@ -37,7 +37,7 @@
 
 -(IBAction)onClick:(id)sender
 {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"https://docs.google.com/forms/d/1xE09tiOgk8Xrtohd793B_sdOfLw_a2EflWmNX2PWnnc/viewform"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"https://docs.google.com/forms/d/1S8XYiKkMPXVCC_q8RxYi_YHZmkPjeDImmJcmpXb-51c/viewform"]];
 }
 
 @end

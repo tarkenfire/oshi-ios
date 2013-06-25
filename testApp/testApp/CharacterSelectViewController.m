@@ -11,6 +11,8 @@
 #import "HiraListViewController.h"
 #import "HiraQuizViewController.h"
 
+#import "KataListViewController.h"
+
 @interface CharacterSelectViewController ()
 
 @end
@@ -43,25 +45,37 @@
 }
 
 -(IBAction)onClick:(id)sender
-{
-    
-    hiraTC = [[UITabBarController alloc] init];
-    HiraListViewController* hiraList = [[HiraListViewController alloc] initWithNibName:@"HiraListViewController" bundle:nil];
-    HiraQuizViewController* hiraQuiz = [[HiraQuizViewController alloc] initWithNibName:@"HiraQuizViewController" bundle:nil];
-    [hiraTC.tabBar setTintColor:[UIColor colorWithRed:0.839 green:0.545 blue:0.545 alpha:1]];
-    [hiraTC setTitle:@"Hiragana Study"];
-    hiraTC.viewControllers = @[hiraList, hiraQuiz];
-    
-    
+{  
     switch ([sender tag])
     {
         case 0: //hiragana
+        {
+            hiraTC = [[UITabBarController alloc] init];
+            HiraListViewController* hiraList = [[HiraListViewController alloc] initWithNibName:@"HiraListViewController" bundle:nil];
+            HiraQuizViewController* hiraQuiz = [[HiraQuizViewController alloc] initWithNibName:@"HiraQuizViewController" bundle:nil];
+            [hiraTC.tabBar setTintColor:[UIColor colorWithRed:0.839 green:0.545 blue:0.545 alpha:1]];
+            [hiraTC setTitle:@"Hiragana Study"];
+            hiraTC.viewControllers = @[hiraList, hiraQuiz];
+
             [self.navigationController pushViewController:hiraTC animated:true];
             break;
+        }
         case 1: //katakana
+        {
+            kataTC = [[UITabBarController alloc] init];
+            KataListViewController* kataList = [[KataListViewController alloc] initWithNibName:@"KataListViewController" bundle:nil];
+            
+            [kataTC.tabBar setTintColor:[UIColor colorWithRed:0.839 green:0.545 blue:0.545 alpha:1]];
+            [kataTC setTitle:@"Katakana Study"];
+            kataTC.viewControllers = @[kataList];
+            [self.navigationController pushViewController:kataTC animated:true];
+            
             break;
+        }
         case 2: //kanji
+        {
             break;
+        }
     }
 }
 

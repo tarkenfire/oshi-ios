@@ -30,6 +30,10 @@
 		98568FDC177273E700595BE3 /* hira_e_stroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 98568FD3177273E700595BE3 /* hira_e_stroke.png */; };
 		98568FDD177273E700595BE3 /* hira_u_stroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 98568FD4177273E700595BE3 /* hira_u_stroke.png */; };
 		98568FDE177273E700595BE3 /* hira_i_stroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 98568FD5177273E700595BE3 /* hira_i_stroke.png */; };
+		98619AF01779F4D3003F617C /* KataListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98619AEE1779F4D2003F617C /* KataListViewController.m */; };
+		98619AF11779F4D3003F617C /* KataListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98619AEF1779F4D2003F617C /* KataListViewController.xib */; };
+		98619AF5177A0C15003F617C /* KataQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98619AF3177A0C14003F617C /* KataQuizViewController.m */; };
+		98619AF6177A0C15003F617C /* KataQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98619AF4177A0C15003F617C /* KataQuizViewController.xib */; };
 		986E2F3D1768585D0088618E /* charButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 986E2F3C1768585D0088618E /* charButton.png */; };
 		986E2F3F176859A40088618E /* charButton_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 986E2F3E176859A40088618E /* charButton_highlighted.png */; };
 		986E2F4417685D750088618E /* vocabButton_hilighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 986E2F4017685D750088618E /* vocabButton_hilighted.png */; };
@@ -101,6 +105,12 @@
 		98568FD3177273E700595BE3 /* hira_e_stroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hira_e_stroke.png; sourceTree = "<group>"; };
 		98568FD4177273E700595BE3 /* hira_u_stroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hira_u_stroke.png; sourceTree = "<group>"; };
 		98568FD5177273E700595BE3 /* hira_i_stroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hira_i_stroke.png; sourceTree = "<group>"; };
+		98619AED1779F4D2003F617C /* KataListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KataListViewController.h; sourceTree = "<group>"; };
+		98619AEE1779F4D2003F617C /* KataListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KataListViewController.m; sourceTree = "<group>"; };
+		98619AEF1779F4D2003F617C /* KataListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KataListViewController.xib; sourceTree = "<group>"; };
+		98619AF2177A0C14003F617C /* KataQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KataQuizViewController.h; sourceTree = "<group>"; };
+		98619AF3177A0C14003F617C /* KataQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KataQuizViewController.m; sourceTree = "<group>"; };
+		98619AF4177A0C15003F617C /* KataQuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KataQuizViewController.xib; sourceTree = "<group>"; };
 		986E2F3C1768585D0088618E /* charButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charButton.png; sourceTree = "<group>"; };
 		986E2F3E176859A40088618E /* charButton_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charButton_highlighted.png; sourceTree = "<group>"; };
 		986E2F4017685D750088618E /* vocabButton_hilighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vocabButton_hilighted.png; sourceTree = "<group>"; };
@@ -321,6 +331,12 @@
 				986E2F861768AAA00088618E /* HiraQuizViewController.h */,
 				986E2F871768AAA00088618E /* HiraQuizViewController.m */,
 				986E2F881768AAA00088618E /* HiraQuizViewController.xib */,
+				98619AED1779F4D2003F617C /* KataListViewController.h */,
+				98619AEE1779F4D2003F617C /* KataListViewController.m */,
+				98619AEF1779F4D2003F617C /* KataListViewController.xib */,
+				98619AF2177A0C14003F617C /* KataQuizViewController.h */,
+				98619AF3177A0C14003F617C /* KataQuizViewController.m */,
+				98619AF4177A0C15003F617C /* KataQuizViewController.xib */,
 			);
 			name = "Character Pages";
 			sourceTree = "<group>";
@@ -365,9 +381,9 @@
 		986E2F93176A8F890088618E /* Prototype-Only Pages */ = {
 			isa = PBXGroup;
 			children = (
+				986E2F9B176AA65B0088618E /* SurveyLinkViewController.xib */,
 				986E2F99176AA65B0088618E /* SurveyLinkViewController.h */,
 				986E2F9A176AA65B0088618E /* SurveyLinkViewController.m */,
-				986E2F9B176AA65B0088618E /* SurveyLinkViewController.xib */,
 			);
 			name = "Prototype-Only Pages";
 			sourceTree = "<group>";
@@ -471,6 +487,8 @@
 				98568FDC177273E700595BE3 /* hira_e_stroke.png in Resources */,
 				98568FDD177273E700595BE3 /* hira_u_stroke.png in Resources */,
 				98568FDE177273E700595BE3 /* hira_i_stroke.png in Resources */,
+				98619AF11779F4D3003F617C /* KataListViewController.xib in Resources */,
+				98619AF6177A0C15003F617C /* KataQuizViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +510,8 @@
 				986E2F97176A922E0088618E /* VerbConjViewController.m in Sources */,
 				986E2F9C176AA65B0088618E /* SurveyLinkViewController.m in Sources */,
 				98568FC01772624500595BE3 /* KanaDetailViewController.m in Sources */,
+				98619AF01779F4D3003F617C /* KataListViewController.m in Sources */,
+				98619AF5177A0C15003F617C /* KataQuizViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,8 +11,6 @@
 
 @interface HiraListViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
-    NSArray* hiraList;
-    NSArray* hiraRomList;
     DataController* dataController;
 }
 

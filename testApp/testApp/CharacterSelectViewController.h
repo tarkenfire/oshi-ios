@@ -11,6 +11,7 @@
 @interface CharacterSelectViewController : UIViewController
 {
     UITabBarController* hiraTC;
+    UITabBarController* kataTC;
 }
 
 -(IBAction)onClick:(id)sender;

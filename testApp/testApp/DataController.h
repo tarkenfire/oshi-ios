@@ -12,12 +12,18 @@
 
 @property NSArray* hiraList;
 @property NSArray* hiraRoList;
+
+@property NSArray* kataList;
+@property NSArray* kataRoList;
+
 @property NSArray* hiraDetailList;
+
 @property int currentIndex;
 
 +(DataController*)getInstance;
 -(void)populateData;
 -(int)getHiraCount;
+-(int)getKataCount;
 
 
 @end

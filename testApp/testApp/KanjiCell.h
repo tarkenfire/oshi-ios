@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface KanjiCell : UITableViewCell
+
+@property IBOutlet UILabel* kanjiDisplay;
+@property IBOutlet UILabel* firstMeaning;
+@property IBOutlet UILabel* skip_code;
+
 
 @end

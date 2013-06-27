@@ -34,6 +34,8 @@ static DataController* _instance = nil;
 
 -(void)populateData
 {
+    //hard coded data; would be in a database in actual app.
+    
     //hiragana and katakana data
     self.currentMode = HIRAGANA;
     
@@ -49,10 +51,12 @@ static DataController* _instance = nil;
 
     //kanji details
     self.kanjiList = @[
-                       @{@"kanji":@"他", @"num_strokes":@"5", @"radical":@"人", @"en_meanings":@[@"another", @"other", @"the others"], @"kun_readings":@[@"ほか"], @"on_readings":@[@"タ"], @"SKIP_code":@"1-3-2"},
-                       @{@"kanji":@"中", @"num_strokes":@"5", @"radical":@"丨", @"en_meanings":@[@"center", @"in", @"inside", @"mean(math)", @"middle"], @"kun_readings":@[@"あた.る", @"うち", @"なか"], @"on_readings":@[@"チュウ	"], @"SKIP_code":@"4-4-3"},
-                       @{@"kanji":@"列", @"num_strokes":@"6", @"radical":@"刀", @"en_meanings":@[@"column", @"file", @"rank", @"row", @"tier"], @"kun_readings":@[], @"on_readings":@[@"レ", @"レツ"], @"SKIP_code":@"1-4-2"},
-                       @{@"kanji":@"天", @"num_strokes":@"4", @"radical":@"大", @"en_meanings":@[@"sky", @"heavens", @"imperial"], @"kun_readings":@[], @"on_readings":@[], @"SKIP_code":@""}, @{@"kanji":@"", @"num_strokes":@"", @"radical":@"", @"en_meanings":@[], @"kun_readings":@[], @"on_readings":@[], @"SKIP_code":@""}];
+                       @{@"kanji":@"他", @"num_strokes":@"5", @"radical":@"人", @"en_meanings":@[@"another", @"other", @"the others"], @"kun_readings":@[@"ほか"], @"on_readings":@[@"タ"], @"SKIP_code":@"1-3-2", @"image_name":@"another_stroke"},
+                       @{@"kanji":@"中", @"num_strokes":@"5", @"radical":@"丨", @"en_meanings":@[@"center", @"in", @"inside", @"mean(math)", @"middle"], @"kun_readings":@[@"あた.る", @"うち", @"なか"], @"on_readings":@[@"チュウ	"], @"SKIP_code":@"4-4-3", @"image_name":@"center_stroke"},
+                       @{@"kanji":@"列", @"num_strokes":@"6", @"radical":@"刀", @"en_meanings":@[@"column", @"file", @"rank", @"row", @"tier"], @"kun_readings":@[], @"on_readings":@[@"レ", @"レツ"], @"SKIP_code":@"1-4-2", @"image_name":@"column_stroke"},
+                       @{@"kanji":@"天", @"num_strokes":@"4", @"radical":@"大", @"en_meanings":@[@"sky", @"heavens", @"imperial"], @"kun_readings":@[@"あま-", @"あまつ", @"あめ"], @"on_readings":@[@"テン"], @"SKIP_code":@"4-4-1", @"image_name":@"sky_stroke"},
+                       @{@"kanji":@"驚", @"num_strokes":@"22", @"radical":@"馬", @"en_meanings":@[@"amazed", @"be surprised", @"frightened", @"wonder"], @"kun_readings":@[@"おどろ.かす", @"おどろ.く"], @"on_readings":@[@"キョウ	"], @"SKIP_code":@"1-12-10", @"image_name":@"amazed_stroke"}
+                       ];
     
     //general data
     self.currentIndex = 0;
@@ -66,6 +70,11 @@ static DataController* _instance = nil;
 -(int)getKataCount
 {
     return [self.kataList count];
+}
+
+-(int)getKanjiCount
+{
+    return [self.kanjiList count];
 }
 
 @end

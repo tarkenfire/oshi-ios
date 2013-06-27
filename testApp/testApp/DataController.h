@@ -34,6 +34,7 @@ KanaMode;
 -(void)populateData;
 -(int)getHiraCount;
 -(int)getKataCount;
+-(int)getKanjiCount;
 
 
 @end

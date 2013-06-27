@@ -8,6 +8,7 @@
 
 #import "KanjiListViewController.h"
 #import "KanjiCell.h"
+#import "KanjiDetailViewController.h"
 
 @interface KanjiListViewController ()
 
@@ -20,6 +21,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.title = @"Common Kanji";
     }
     return self;
 }
@@ -28,6 +30,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    dataController = [DataController getInstance];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,8 +43,7 @@
 //table code
 -(NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section
 {
-//    return [dataController getKataCount];
-    return 4;
+    return [dataController getKanjiCount];
 }
 
 -(UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -55,17 +57,23 @@
         NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"KanjiCell" owner:self options:nil];
         cell = [views objectAtIndex:0];
     }
+    NSDictionary* curKanji = dataController.kanjiList[indexPath.row];
+    NSArray* meanings = [curKanji valueForKey:@"en_meanings"];
+    
+    cell.kanjiDisplay.text = [curKanji valueForKey:@"kanji"];
+    cell.firstMeaning.text = meanings[0];
+    cell.skip_code.text = [NSString stringWithFormat:@"SKIP %@",[curKanji valueForKey:@"SKIP_code"]];
     
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //KanaDetailViewController* kanaView = [[KanaDetailViewController alloc] initWithNibName:@"KanaDetailViewController" bundle:nil];
+    KanjiDetailViewController* kanjiView = [[KanjiDetailViewController alloc] initWithNibName:@"KanjiDetailViewController" bundle:nil];
     
-    //dataController.currentIndex = indexPath.row;
+    dataController.currentIndex = indexPath.row;
     
-    //[self presentViewController:kanaView animated:true completion:nil];
+    [self presentViewController:kanjiView animated:true completion:nil];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath

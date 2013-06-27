@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataController.h"
 
 @interface KanjiListViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+{
+    DataController* dataController;
+}
 
 @end

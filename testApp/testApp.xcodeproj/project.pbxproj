@@ -50,6 +50,13 @@
 		98619B19177C4D21003F617C /* AdjectiveConjViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98619B17177C4D21003F617C /* AdjectiveConjViewController.xib */; };
 		98619B1D177C551B003F617C /* SentenceQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98619B1B177C551A003F617C /* SentenceQuizViewController.m */; };
 		98619B1E177C551B003F617C /* SentenceQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98619B1C177C551B003F617C /* SentenceQuizViewController.xib */; };
+		98619B22177C92EE003F617C /* KanjiDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98619B20177C92ED003F617C /* KanjiDetailViewController.m */; };
+		98619B23177C92EE003F617C /* KanjiDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98619B21177C92ED003F617C /* KanjiDetailViewController.xib */; };
+		98619B26177C9452003F617C /* amazed_stroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 98619B25177C9452003F617C /* amazed_stroke.png */; };
+		98619B2B177CA0A5003F617C /* sky_stroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 98619B27177CA0A5003F617C /* sky_stroke.png */; };
+		98619B2C177CA0A5003F617C /* column_stroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 98619B28177CA0A5003F617C /* column_stroke.png */; };
+		98619B2D177CA0A5003F617C /* center_stroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 98619B29177CA0A5003F617C /* center_stroke.png */; };
+		98619B2E177CA0A5003F617C /* another_stroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 98619B2A177CA0A5003F617C /* another_stroke.png */; };
 		986E2F3D1768585D0088618E /* charButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 986E2F3C1768585D0088618E /* charButton.png */; };
 		986E2F3F176859A40088618E /* charButton_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 986E2F3E176859A40088618E /* charButton_highlighted.png */; };
 		986E2F4417685D750088618E /* vocabButton_hilighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 986E2F4017685D750088618E /* vocabButton_hilighted.png */; };
@@ -146,6 +153,14 @@
 		98619B1A177C551A003F617C /* SentenceQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SentenceQuizViewController.h; sourceTree = "<group>"; };
 		98619B1B177C551A003F617C /* SentenceQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SentenceQuizViewController.m; sourceTree = "<group>"; };
 		98619B1C177C551B003F617C /* SentenceQuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SentenceQuizViewController.xib; sourceTree = "<group>"; };
+		98619B1F177C92EC003F617C /* KanjiDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanjiDetailViewController.h; sourceTree = "<group>"; };
+		98619B20177C92ED003F617C /* KanjiDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KanjiDetailViewController.m; sourceTree = "<group>"; };
+		98619B21177C92ED003F617C /* KanjiDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KanjiDetailViewController.xib; sourceTree = "<group>"; };
+		98619B25177C9452003F617C /* amazed_stroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amazed_stroke.png; sourceTree = "<group>"; };
+		98619B27177CA0A5003F617C /* sky_stroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sky_stroke.png; sourceTree = "<group>"; };
+		98619B28177CA0A5003F617C /* column_stroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = column_stroke.png; sourceTree = "<group>"; };
+		98619B29177CA0A5003F617C /* center_stroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = center_stroke.png; sourceTree = "<group>"; };
+		98619B2A177CA0A5003F617C /* another_stroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = another_stroke.png; sourceTree = "<group>"; };
 		986E2F3C1768585D0088618E /* charButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charButton.png; sourceTree = "<group>"; };
 		986E2F3E176859A40088618E /* charButton_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charButton_highlighted.png; sourceTree = "<group>"; };
 		986E2F4017685D750088618E /* vocabButton_hilighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vocabButton_hilighted.png; sourceTree = "<group>"; };
@@ -269,6 +284,9 @@
 				98568FBD1772624500595BE3 /* KanaDetailViewController.h */,
 				98568FBE1772624500595BE3 /* KanaDetailViewController.m */,
 				98568FBF1772624500595BE3 /* KanaDetailViewController.xib */,
+				98619B1F177C92EC003F617C /* KanjiDetailViewController.h */,
+				98619B20177C92ED003F617C /* KanjiDetailViewController.m */,
+				98619B21177C92ED003F617C /* KanjiDetailViewController.xib */,
 			);
 			name = "Kana Detail Modal";
 			sourceTree = "<group>";
@@ -300,9 +318,22 @@
 			name = "Hira and Kata Stroke Orders";
 			sourceTree = "<group>";
 		};
+		98619B24177C92F8003F617C /* Kanji Stroke Orders */ = {
+			isa = PBXGroup;
+			children = (
+				98619B27177CA0A5003F617C /* sky_stroke.png */,
+				98619B28177CA0A5003F617C /* column_stroke.png */,
+				98619B29177CA0A5003F617C /* center_stroke.png */,
+				98619B2A177CA0A5003F617C /* another_stroke.png */,
+				98619B25177C9452003F617C /* amazed_stroke.png */,
+			);
+			name = "Kanji Stroke Orders";
+			sourceTree = "<group>";
+		};
 		986E2F35176820B10088618E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				98619B24177C92F8003F617C /* Kanji Stroke Orders */,
 				98568FC21772699600595BE3 /* Hira and Kata Stroke Orders */,
 				986E2F8B1768BA460088618E /* Icons */,
 				986E2F6B1768957B0088618E /* Grammar Pages */,
@@ -556,6 +587,12 @@
 				98619B14177C1D9A003F617C /* KanjiCell.xib in Resources */,
 				98619B19177C4D21003F617C /* AdjectiveConjViewController.xib in Resources */,
 				98619B1E177C551B003F617C /* SentenceQuizViewController.xib in Resources */,
+				98619B23177C92EE003F617C /* KanjiDetailViewController.xib in Resources */,
+				98619B26177C9452003F617C /* amazed_stroke.png in Resources */,
+				98619B2B177CA0A5003F617C /* sky_stroke.png in Resources */,
+				98619B2C177CA0A5003F617C /* column_stroke.png in Resources */,
+				98619B2D177CA0A5003F617C /* center_stroke.png in Resources */,
+				98619B2E177CA0A5003F617C /* another_stroke.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +619,7 @@
 				98619B12177C1D86003F617C /* KanjiCell.m in Sources */,
 				98619B18177C4D21003F617C /* AdjectiveConjViewController.m in Sources */,
 				98619B1D177C551B003F617C /* SentenceQuizViewController.m in Sources */,
+				98619B22177C92EE003F617C /* KanjiDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

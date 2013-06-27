@@ -9,6 +9,7 @@
 #import "HomeScreenViewController.h"
 #import "CharacterSelectViewController.h"
 #import "GrammarSelectViewController.h"
+#import "VocabHomeViewController.h"
 
 @interface HomeScreenViewController ()
 
@@ -40,6 +41,7 @@
 {
     CharacterSelectViewController* charSelectView = [[CharacterSelectViewController alloc] initWithNibName:@"CharacterSelectViewController" bundle:nil];
     GrammarSelectViewController* gramSelectView = [[GrammarSelectViewController alloc] initWithNibName:@"GrammarSelectViewController" bundle:nil];
+    VocabHomeViewController* vocabHomeView = [[VocabHomeViewController alloc] initWithNibName:@"VocabHomeViewController" bundle:nil];
     
     switch ([sender tag])
     {
@@ -50,7 +52,7 @@
             [self.navigationController pushViewController:gramSelectView animated:true];
             break;
         case 2: //vocabulary
-            
+            [self.navigationController pushViewController:vocabHomeView animated:true];
             break;
     }
 }

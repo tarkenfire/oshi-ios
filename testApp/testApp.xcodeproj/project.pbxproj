@@ -57,6 +57,15 @@
 		98619B2C177CA0A5003F617C /* column_stroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 98619B28177CA0A5003F617C /* column_stroke.png */; };
 		98619B2D177CA0A5003F617C /* center_stroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 98619B29177CA0A5003F617C /* center_stroke.png */; };
 		98619B2E177CA0A5003F617C /* another_stroke.png in Resources */ = {isa = PBXBuildFile; fileRef = 98619B2A177CA0A5003F617C /* another_stroke.png */; };
+		98619B33177CAD75003F617C /* VocabHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98619B31177CAD75003F617C /* VocabHomeViewController.m */; };
+		98619B34177CAD75003F617C /* VocabHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98619B32177CAD75003F617C /* VocabHomeViewController.xib */; };
+		98619B39177CB1A9003F617C /* VocabCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98619B38177CB1A9003F617C /* VocabCell.xib */; };
+		98619B3D177CC5CF003F617C /* vocabselect_top_gutter.png in Resources */ = {isa = PBXBuildFile; fileRef = 98619B3B177CC5CF003F617C /* vocabselect_top_gutter.png */; };
+		98619B3E177CC5CF003F617C /* vocabselect_bottom_gutter.png in Resources */ = {isa = PBXBuildFile; fileRef = 98619B3C177CC5CF003F617C /* vocabselect_bottom_gutter.png */; };
+		98619B42177CCBA4003F617C /* VocabListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98619B40177CCBA3003F617C /* VocabListViewController.m */; };
+		98619B43177CCBA4003F617C /* VocabListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98619B41177CCBA4003F617C /* VocabListViewController.xib */; };
+		98619B49177CCD5C003F617C /* VocabTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98619B48177CCD5C003F617C /* VocabTableCell.m */; };
+		98619B4D177CD84B003F617C /* VocabTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98619B4C177CD84A003F617C /* VocabTableCell.xib */; };
 		986E2F3D1768585D0088618E /* charButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 986E2F3C1768585D0088618E /* charButton.png */; };
 		986E2F3F176859A40088618E /* charButton_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 986E2F3E176859A40088618E /* charButton_highlighted.png */; };
 		986E2F4417685D750088618E /* vocabButton_hilighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 986E2F4017685D750088618E /* vocabButton_hilighted.png */; };
@@ -161,6 +170,18 @@
 		98619B28177CA0A5003F617C /* column_stroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = column_stroke.png; sourceTree = "<group>"; };
 		98619B29177CA0A5003F617C /* center_stroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = center_stroke.png; sourceTree = "<group>"; };
 		98619B2A177CA0A5003F617C /* another_stroke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = another_stroke.png; sourceTree = "<group>"; };
+		98619B30177CAD75003F617C /* VocabHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VocabHomeViewController.h; sourceTree = "<group>"; };
+		98619B31177CAD75003F617C /* VocabHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VocabHomeViewController.m; sourceTree = "<group>"; };
+		98619B32177CAD75003F617C /* VocabHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VocabHomeViewController.xib; sourceTree = "<group>"; };
+		98619B38177CB1A9003F617C /* VocabCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VocabCell.xib; sourceTree = "<group>"; };
+		98619B3B177CC5CF003F617C /* vocabselect_top_gutter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vocabselect_top_gutter.png; sourceTree = "<group>"; };
+		98619B3C177CC5CF003F617C /* vocabselect_bottom_gutter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vocabselect_bottom_gutter.png; sourceTree = "<group>"; };
+		98619B3F177CCBA3003F617C /* VocabListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VocabListViewController.h; sourceTree = "<group>"; };
+		98619B40177CCBA3003F617C /* VocabListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VocabListViewController.m; sourceTree = "<group>"; };
+		98619B41177CCBA4003F617C /* VocabListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VocabListViewController.xib; sourceTree = "<group>"; };
+		98619B47177CCD5B003F617C /* VocabTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VocabTableCell.h; sourceTree = "<group>"; };
+		98619B48177CCD5C003F617C /* VocabTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VocabTableCell.m; sourceTree = "<group>"; };
+		98619B4C177CD84A003F617C /* VocabTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VocabTableCell.xib; sourceTree = "<group>"; };
 		986E2F3C1768585D0088618E /* charButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charButton.png; sourceTree = "<group>"; };
 		986E2F3E176859A40088618E /* charButton_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charButton_highlighted.png; sourceTree = "<group>"; };
 		986E2F4017685D750088618E /* vocabButton_hilighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vocabButton_hilighted.png; sourceTree = "<group>"; };
@@ -330,9 +351,36 @@
 			name = "Kanji Stroke Orders";
 			sourceTree = "<group>";
 		};
+		98619B2F177CAC80003F617C /* Vocab Pages */ = {
+			isa = PBXGroup;
+			children = (
+				98619B30177CAD75003F617C /* VocabHomeViewController.h */,
+				98619B31177CAD75003F617C /* VocabHomeViewController.m */,
+				98619B32177CAD75003F617C /* VocabHomeViewController.xib */,
+				98619B38177CB1A9003F617C /* VocabCell.xib */,
+				98619B3F177CCBA3003F617C /* VocabListViewController.h */,
+				98619B40177CCBA3003F617C /* VocabListViewController.m */,
+				98619B41177CCBA4003F617C /* VocabListViewController.xib */,
+				98619B47177CCD5B003F617C /* VocabTableCell.h */,
+				98619B48177CCD5C003F617C /* VocabTableCell.m */,
+				98619B4C177CD84A003F617C /* VocabTableCell.xib */,
+			);
+			name = "Vocab Pages";
+			sourceTree = "<group>";
+		};
+		98619B3A177CC081003F617C /* Vocab Pages */ = {
+			isa = PBXGroup;
+			children = (
+				98619B3B177CC5CF003F617C /* vocabselect_top_gutter.png */,
+				98619B3C177CC5CF003F617C /* vocabselect_bottom_gutter.png */,
+			);
+			name = "Vocab Pages";
+			sourceTree = "<group>";
+		};
 		986E2F35176820B10088618E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				98619B3A177CC081003F617C /* Vocab Pages */,
 				98619B24177C92F8003F617C /* Kanji Stroke Orders */,
 				98568FC21772699600595BE3 /* Hira and Kata Stroke Orders */,
 				986E2F8B1768BA460088618E /* Icons */,
@@ -361,6 +409,7 @@
 		986E2F5017688C230088618E /* View Controllers and Nibs */ = {
 			isa = PBXGroup;
 			children = (
+				98619B2F177CAC80003F617C /* Vocab Pages */,
 				98568FBC177261EA00595BE3 /* Kana Detail Modal */,
 				986E2F93176A8F890088618E /* Prototype-Only Pages */,
 				986E2F6A1768956D0088618E /* Grammar Pages */,
@@ -593,6 +642,12 @@
 				98619B2C177CA0A5003F617C /* column_stroke.png in Resources */,
 				98619B2D177CA0A5003F617C /* center_stroke.png in Resources */,
 				98619B2E177CA0A5003F617C /* another_stroke.png in Resources */,
+				98619B34177CAD75003F617C /* VocabHomeViewController.xib in Resources */,
+				98619B39177CB1A9003F617C /* VocabCell.xib in Resources */,
+				98619B3D177CC5CF003F617C /* vocabselect_top_gutter.png in Resources */,
+				98619B3E177CC5CF003F617C /* vocabselect_bottom_gutter.png in Resources */,
+				98619B43177CCBA4003F617C /* VocabListViewController.xib in Resources */,
+				98619B4D177CD84B003F617C /* VocabTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,6 +675,9 @@
 				98619B18177C4D21003F617C /* AdjectiveConjViewController.m in Sources */,
 				98619B1D177C551B003F617C /* SentenceQuizViewController.m in Sources */,
 				98619B22177C92EE003F617C /* KanjiDetailViewController.m in Sources */,
+				98619B33177CAD75003F617C /* VocabHomeViewController.m in Sources */,
+				98619B42177CCBA4003F617C /* VocabListViewController.m in Sources */,
+				98619B49177CCD5C003F617C /* VocabTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -27,6 +27,9 @@ KanaMode;
 
 @property NSArray* kanjiList;
 
+@property NSArray* vocabListNames;
+@property NSArray* vocabLists;
+
 @property int currentIndex;
 @property int currentMode;
 
@@ -35,6 +38,9 @@ KanaMode;
 -(int)getHiraCount;
 -(int)getKataCount;
 -(int)getKanjiCount;
+-(int)getVocabListCount;
+
+-(int)getVocabCountAtIndex:(int)selectedIndex;
 
 
 @end

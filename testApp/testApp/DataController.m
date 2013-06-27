@@ -58,6 +58,22 @@ static DataController* _instance = nil;
                        @{@"kanji":@"驚", @"num_strokes":@"22", @"radical":@"馬", @"en_meanings":@[@"amazed", @"be surprised", @"frightened", @"wonder"], @"kun_readings":@[@"おどろ.かす", @"おどろ.く"], @"on_readings":@[@"キョウ	"], @"SKIP_code":@"1-12-10", @"image_name":@"amazed_stroke"}
                        ];
     
+    //vocab data
+    self.vocabListNames = @[@"Common Phrases", @"Coming Soon", @"Coming Soon", @"Coming Soon", @"Coming Soon", @"Coming Soon", @"Coming Soon", @"Coming Soon", @"Coming Soon", @"Coming Soon", @"Coming Soon", @"Coming Soon", @"Coming Soon", @"Coming Soon", @"Coming Soon", @"Coming Soon", @"Coming Soon", @"Coming Soon", @"Coming Soon", @"Coming Soon"];
+    
+    self.vocabLists = @[
+                        @[ @{@"index":@"1", @"vocab_kana":@"ありがとう。", @"vocab_roma":@"arigatoo.", @"en_meaning":@"Thank you."},
+                           @{@"index":@"2", @"vocab_kana":@"おはようございます。", @"vocab_roma":@"Ohayou gozaimasu.", @"en_meaning":@"Good morning (formal)"},
+                           @{@"index":@"3", @"vocab_kana":@"おはよう。", @"vocab_roma":@"Ohayou.", @"en_meaning":@"Good morning (casual)"},
+                           @{@"index":@"4", @"vocab_kana":@"じめみに。", @"vocab_roma":@"Majimeni.", @"en_meaning":@"Be serious."},
+                           @{@"index":@"5", @"vocab_kana":@"いくらですか。", @"vocab_roma":@"Ikura desu ka.", @"en_meaning":@"How much?"},
+                           @{@"index":@"6", @"vocab_kana":@"文句いうな。", @"vocab_roma":@"Monku iuna.", @"en_meaning":@"Stop complaining."},
+                           @{@"index":@"7", @"vocab_kana":@"本当にうれしい。", @"vocab_roma":@"Hontou ni ureshii.", @"en_meaning":@"I'm overjoyed."},
+                           @{@"index":@"8", @"vocab_kana":@"気をつけて。", @"vocab_roma":@"Ki o tsukete.", @"en_meaning":@"Take care."},
+                           @{@"index":@"9", @"vocab_kana":@"勇気をだして。", @"vocab_roma":@"Yuuki o dashite.", @"en_meaning":@"Be brave."},
+                           @{@"index":@"10", @"vocab_kana":@"朝食はつえいていますか。", @"vocab_roma":@"Choushoku wa tsuite imasu ka.", @"en_meaning":@"Is breakfast included?"}]
+                        ];
+    
     //general data
     self.currentIndex = 0;
 }
@@ -75,6 +91,16 @@ static DataController* _instance = nil;
 -(int)getKanjiCount
 {
     return [self.kanjiList count];
+}
+
+-(int)getVocabListCount
+{
+    return [self.vocabListNames count];
+}
+
+-(int)getVocabCountAtIndex:(int)selectedIndex
+{
+    return [self.vocabLists[selectedIndex] count];
 }
 
 @end

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DataController.h"
 
-@interface HiraQuizViewController : UIViewController
+@interface KanaQuizViewController : UIViewController
 {
     DataController* dataController;
     

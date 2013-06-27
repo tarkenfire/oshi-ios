@@ -6,14 +6,14 @@
 //  Copyright (c) 2013 Hinode Softworks. All rights reserved.
 //
 
-#import "HiraQuizViewController.h"
+#import "KanaQuizViewController.h"
 #import "SurveyLinkViewController.h"
 
-@interface HiraQuizViewController ()
+@interface KanaQuizViewController ()
 
 @end
 
-@implementation HiraQuizViewController
+@implementation KanaQuizViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,16 +32,32 @@
     // Do any additional setup after loading the view from its nib.
     dataController = [DataController getInstance];
     
+    switch (dataController.currentMode)
+    {
+        case HIRAGANA:
+            kana = @[@"き",@"ふ", @"こ", @"う", @"ろ"];
+            correctAnswers = @[@1, @3, @2, @4, @1];
+            
+            q1Anwsers = @[@"ki", @"ha", @"te", @"so"];
+            q2Anwsers = @[@"a", @"go", @"fu", @"shi"];
+            q3Anwsers = @[@"ka", @"ko", @"so", @"he"];
+            q4Anwsers = @[@"ya", @"chi", @"tsu", @"u"];
+            q5Anwsers = @[@"ro", @"kyu", @"ka", @"te"];
+            
+            break;
+        case KATAKANA:
+            kana = @[@"ブ",@"コ", @"タ", @"カ", @"ル"];
+            correctAnswers = @[@1, @3, @2, @4, @1];
+            
+            q1Anwsers = @[@"bu", @"ha", @"te", @"so"];
+            q2Anwsers = @[@"a", @"go", @"ko", @"shi"];
+            q3Anwsers = @[@"ka", @"ta", @"so", @"he"];
+            q4Anwsers = @[@"ya", @"chi", @"tsu", @"wo"];
+            q5Anwsers = @[@"re", @"kyu", @"wa", @"te"];
+            break;
+    }
+
     //quiz is hard-coded for sake of prototype. Real app would draw from database.
-    kana = @[@"き",@"ふ", @"こ", @"う", @"ろ"];
-    correctAnswers = @[@1, @3, @2, @4, @1];
-    
-    q1Anwsers = @[@"ki", @"ha", @"te", @"so"];
-    q2Anwsers = @[@"a", @"go", @"fu", @"shi"];
-    q3Anwsers = @[@"ka", @"ko", @"so", @"he"];
-    q4Anwsers = @[@"ya", @"chi", @"tsu", @"u"];
-    q5Anwsers = @[@"ro", @"kyu", @"ka", @"te"];
-    
     answers = @[q1Anwsers, q2Anwsers, q3Anwsers, q4Anwsers,q5Anwsers];
     
     counter = 0;
@@ -121,6 +137,7 @@
         NSLog(@"After final question.");
     }
 }
+
 
 -(void)animateCorrectAnswer
 {

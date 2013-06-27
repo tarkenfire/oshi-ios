@@ -7,6 +7,7 @@
 //
 
 #import "KataListViewController.h"
+#import "KanaDetailViewController.h"
 
 @interface KataListViewController ()
 
@@ -19,6 +20,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.title = @"Katakana List";
+        self.tabBarItem.image = [UIImage imageNamed:@"listIcon"];
     }
     return self;
 }
@@ -28,6 +31,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     dataController = [DataController getInstance];
+    dataController.currentMode = KATAKANA; 
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,7 +44,7 @@
 //table code
 -(NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [dataController getHiraCount];
+    return [dataController getKataCount];
 }
 
 -(UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -61,10 +65,11 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    KanaDetailViewController* kanaView = [[KanaDetailViewController alloc] initWithNibName:@"KanaDetailViewController" bundle:nil];
     
     dataController.currentIndex = indexPath.row;
     
-    
+    [self presentViewController:kanaView animated:true completion:nil];
 }
 
 

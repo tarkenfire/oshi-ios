@@ -32,7 +32,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     dataController = [DataController getInstance];
-    
+    dataController.currentMode = HIRAGANA;
 }
 
 - (void)didReceiveMemoryWarning

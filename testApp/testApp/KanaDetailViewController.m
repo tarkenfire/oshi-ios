@@ -29,10 +29,22 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    NSArray* items = dataController.hiraDetailList[dataController.currentIndex];
-    mainDisplay.text = dataController.hiraList[dataController.currentIndex];
+    NSArray* items;
     
-    localNavBar.topItem.title = [NSString stringWithFormat:@"Details for %@ (%@)", dataController.hiraList[dataController.currentIndex], dataController.hiraRoList[dataController.currentIndex]];
+    switch (dataController.currentMode)
+    {
+        case HIRAGANA:
+            items = dataController.hiraDetailList[dataController.currentIndex];
+            localNavBar.topItem.title = [NSString stringWithFormat:@"Details for %@ (%@)", dataController.hiraList[dataController.currentIndex], dataController.hiraRoList[dataController.currentIndex]];
+            mainDisplay.text = dataController.hiraList[dataController.currentIndex];
+            break;
+        case KATAKANA:
+            items = dataController.kataDetailList[dataController.currentIndex];
+            localNavBar.topItem.title = [NSString stringWithFormat:@"Details for %@ (%@)", dataController.kataList[dataController.currentIndex], dataController.kataRoList[dataController.currentIndex]];
+            mainDisplay.text = dataController.kataList[dataController.currentIndex];
+            break;
+    }
+    
     
     stroke.image = [UIImage imageNamed:items[0]];
     

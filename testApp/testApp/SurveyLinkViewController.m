@@ -37,7 +37,18 @@
 
 -(IBAction)onClick:(id)sender
 {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"https://docs.google.com/forms/d/1S8XYiKkMPXVCC_q8RxYi_YHZmkPjeDImmJcmpXb-51c/viewform"]];
+    switch ([sender tag])
+    {
+        case 0: //survey button
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"https://docs.google.com/forms/d/1S8XYiKkMPXVCC_q8RxYi_YHZmkPjeDImmJcmpXb-51c/viewform"]];
+            break;
+        case 1: //close button
+            [self dismissViewControllerAnimated:true completion:nil];
+            break;
+    }
+    
+    
+    
 }
 
 @end

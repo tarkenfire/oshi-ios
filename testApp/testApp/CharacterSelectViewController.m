@@ -9,7 +9,7 @@
 #import "CharacterSelectViewController.h"
 
 #import "HiraListViewController.h"
-#import "HiraQuizViewController.h"
+#import "KanaQuizViewController.h"
 
 #import "KataListViewController.h"
 
@@ -52,7 +52,7 @@
         {
             hiraTC = [[UITabBarController alloc] init];
             HiraListViewController* hiraList = [[HiraListViewController alloc] initWithNibName:@"HiraListViewController" bundle:nil];
-            HiraQuizViewController* hiraQuiz = [[HiraQuizViewController alloc] initWithNibName:@"HiraQuizViewController" bundle:nil];
+            KanaQuizViewController* hiraQuiz = [[KanaQuizViewController alloc] initWithNibName:@"HiraQuizViewController" bundle:nil];
             [hiraTC.tabBar setTintColor:[UIColor colorWithRed:0.839 green:0.545 blue:0.545 alpha:1]];
             [hiraTC setTitle:@"Hiragana Study"];
             hiraTC.viewControllers = @[hiraList, hiraQuiz];
@@ -64,10 +64,10 @@
         {
             kataTC = [[UITabBarController alloc] init];
             KataListViewController* kataList = [[KataListViewController alloc] initWithNibName:@"KataListViewController" bundle:nil];
-            
+            KanaQuizViewController* kataQuiz = [[KanaQuizViewController alloc] initWithNibName:@"KanaQuizViewController" bundle:nil];
             [kataTC.tabBar setTintColor:[UIColor colorWithRed:0.839 green:0.545 blue:0.545 alpha:1]];
             [kataTC setTitle:@"Katakana Study"];
-            kataTC.viewControllers = @[kataList];
+            kataTC.viewControllers = @[kataList, kataQuiz];
             [self.navigationController pushViewController:kataTC animated:true];
             
             break;

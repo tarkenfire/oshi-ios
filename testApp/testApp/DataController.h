@@ -10,6 +10,12 @@
 
 @interface DataController : NSObject
 
+typedef enum
+{
+    KATAKANA = 0, HIRAGANA = 1
+}
+KanaMode;
+
 @property NSArray* hiraList;
 @property NSArray* hiraRoList;
 
@@ -17,8 +23,10 @@
 @property NSArray* kataRoList;
 
 @property NSArray* hiraDetailList;
+@property NSArray* kataDetailList;
 
 @property int currentIndex;
+@property int currentMode;
 
 +(DataController*)getInstance;
 -(void)populateData;

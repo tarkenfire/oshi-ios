@@ -52,7 +52,7 @@
             q1Anwsers = @[@"bu", @"ha", @"te", @"so"];
             q2Anwsers = @[@"a", @"go", @"ko", @"shi"];
             q3Anwsers = @[@"ka", @"ta", @"so", @"he"];
-            q4Anwsers = @[@"ya", @"chi", @"tsu", @"wo"];
+            q4Anwsers = @[@"ya", @"chi", @"tsu", @"ka"];
             q5Anwsers = @[@"re", @"kyu", @"wa", @"te"];
             break;
     }
@@ -106,6 +106,11 @@
 
 -(IBAction)onClick:(id)sender
 {
+    if ([sender tag] == 5)
+    {
+        [self resetQuiz];
+        return;
+    }
     
     if (counter < 5)
     {
@@ -136,6 +141,22 @@
     {
         NSLog(@"After final question.");
     }
+}
+
+-(void)resetQuiz
+{
+    counter = 0;
+    
+    correct = 0;
+    incorrect = 0;
+    
+    correctLabel.text = @"0";
+    incorrectLabel.text = @"0";
+    
+    [self animateCorrectAnswer];
+    [self animateIncorrectAnswer];
+    
+    [self loadFirstQuestion];
 }
 
 

@@ -9,9 +9,12 @@
 #import "CharacterSelectViewController.h"
 
 #import "HiraListViewController.h"
+#import "KataListViewController.h"
+
 #import "KanaQuizViewController.h"
 
-#import "KataListViewController.h"
+#import "KanjiListViewController.h"
+
 
 @interface CharacterSelectViewController ()
 
@@ -52,7 +55,7 @@
         {
             hiraTC = [[UITabBarController alloc] init];
             HiraListViewController* hiraList = [[HiraListViewController alloc] initWithNibName:@"HiraListViewController" bundle:nil];
-            KanaQuizViewController* hiraQuiz = [[KanaQuizViewController alloc] initWithNibName:@"HiraQuizViewController" bundle:nil];
+            KanaQuizViewController* hiraQuiz = [[KanaQuizViewController alloc] initWithNibName:@"KanaQuizViewController" bundle:nil];
             [hiraTC.tabBar setTintColor:[UIColor colorWithRed:0.839 green:0.545 blue:0.545 alpha:1]];
             [hiraTC setTitle:@"Hiragana Study"];
             hiraTC.viewControllers = @[hiraList, hiraQuiz];
@@ -74,6 +77,8 @@
         }
         case 2: //kanji
         {
+            KanjiListViewController* kajaList = [[KanjiListViewController alloc] initWithNibName:@"KanjiListViewController" bundle:nil];
+            [self.navigationController pushViewController:kajaList animated:true];
             break;
         }
     }

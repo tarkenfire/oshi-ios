@@ -7,7 +7,10 @@
 //
 
 #import "GrammarSelectViewController.h"
+
 #import "VerbConjViewController.h"
+#import "AdjectiveConjViewController.h"
+#import "SentenceQuizViewController.h"
 
 @interface GrammarSelectViewController ()
 
@@ -42,17 +45,28 @@
 
 -(IBAction)onClick:(id)sender
 {
-    VerbConjViewController* verbConjVC = [[VerbConjViewController alloc] initWithNibName:@"VerbConjViewController" bundle:nil];
     
     switch ([sender tag])
     {
         case 0: //verb conjugation
+        {
+            VerbConjViewController* verbConjVC = [[VerbConjViewController alloc] initWithNibName:@"VerbConjViewController" bundle:nil];
+
             [self.navigationController pushViewController:verbConjVC animated:true];
             break;
+        }
         case 1: //adjective conjugation
+        {
+            AdjectiveConjViewController* adjVConjVC = [[AdjectiveConjViewController alloc] initWithNibName:@"AdjectiveConjViewController" bundle:nil];
+            [self.navigationController pushViewController:adjVConjVC animated:true];
             break;
+        }
         case 2: //sentences
+        {
+            SentenceQuizViewController* sentVC = [[SentenceQuizViewController alloc] initWithNibName:@"SentenceQuizViewController" bundle:nil];
+            [self.navigationController pushViewController:sentVC animated:true];
             break;
+        }
     }
 }
 

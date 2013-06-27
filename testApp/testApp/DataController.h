@@ -25,6 +25,8 @@ KanaMode;
 @property NSArray* hiraDetailList;
 @property NSArray* kataDetailList;
 
+@property NSArray* kanjiList;
+
 @property int currentIndex;
 @property int currentMode;
 

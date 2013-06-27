@@ -34,6 +34,7 @@ static DataController* _instance = nil;
 
 -(void)populateData
 {
+    //hiragana and katakana data
     self.currentMode = HIRAGANA;
     
     self.hiraList = @[@"あ",@"え",@"い",@"お",@"う",@"か",@"け",@"き",@"こ",@"く"];
@@ -46,7 +47,14 @@ static DataController* _instance = nil;
     
     self.kataDetailList = @[@[@"kata_a_stroke", @"阿", @"朝日のア", @"－－・－－", @"Asahi no \"a\""], @[@"kata_e_stroke", @"江", @"英語のエ", @"－・－－－", @"Eigo no \"e\""], @[@"kata_i_stroke", @"伊", @"いろはのイ", @"･－", @"Iroha no \"i\""], @[@"kata_o_stroke", @"於", @"大阪のオ", @"・－・・・", @"Ōsaka no \"o\""], @[@"kata_u_stroke", @"宇", @"上野のウ", @"・・－", @"Ueno no \"u\""], @[@"kata_sa_stroke", @"散", @"桜のサ", @"－・－・－", @"Sakura no \"sa\""], @[@"kata_se_stroke", @"世", @"世界のセ", @"・－－－・", @"Sekai no \"se\""], @[@"kata_shi_stroke", @"之", @"新聞のシ", @"－－・－・", @"Shinbun no \"shi\""], @[@"kata_so_stroke", @"曽", @"そろばんのソ", @"－－－・", @"Soroban no \"so\""],@[@"kata_su_stroke", @"須", @"すずめのス", @"－－－・－", @"Suzume no \"su\""]];
 
+    //kanji details
+    self.kanjiList = @[
+                       @{@"kanji":@"他", @"num_strokes":@"5", @"radical":@"人", @"en_meanings":@[@"another", @"other", @"the others"], @"kun_readings":@[@"ほか"], @"on_readings":@[@"タ"], @"SKIP_code":@"1-3-2"},
+                       @{@"kanji":@"中", @"num_strokes":@"5", @"radical":@"丨", @"en_meanings":@[@"center", @"in", @"inside", @"mean(math)", @"middle"], @"kun_readings":@[@"あた.る", @"うち", @"なか"], @"on_readings":@[@"チュウ	"], @"SKIP_code":@"4-4-3"},
+                       @{@"kanji":@"列", @"num_strokes":@"6", @"radical":@"刀", @"en_meanings":@[@"column", @"file", @"rank", @"row", @"tier"], @"kun_readings":@[], @"on_readings":@[@"レ", @"レツ"], @"SKIP_code":@"1-4-2"},
+                       @{@"kanji":@"天", @"num_strokes":@"4", @"radical":@"大", @"en_meanings":@[@"sky", @"heavens", @"imperial"], @"kun_readings":@[], @"on_readings":@[], @"SKIP_code":@""}, @{@"kanji":@"", @"num_strokes":@"", @"radical":@"", @"en_meanings":@[], @"kun_readings":@[], @"on_readings":@[], @"SKIP_code":@""}];
     
+    //general data
     self.currentIndex = 0;
 }
 
